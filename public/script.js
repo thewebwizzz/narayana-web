@@ -104,7 +104,7 @@ const profiles = [
             "Thank You",
 
         description:
-            "We are grateful to everyone supporting Gulzaar Nights.",
+            "We are grateful to everyone supporting.",
 
         social:
             ""
@@ -122,16 +122,16 @@ const profiles = [
             "copyright",
 
         role:
-            "GULZAAR NIGHTS",
+            "Narayana",
 
         name:
             "All Rights Reserved",
 
         description:
-            "© 2026 Gulzaar Nights",
+            "© 2026 HULLOR",
 
         social:
-            "@gulzaarnights"
+            ""
 
     }
 
