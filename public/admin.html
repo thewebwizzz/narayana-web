@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | Gulzar Nights</title>
+
+    <link rel="stylesheet"
+        href="admin.css">
+
+</head>
+
+
+<body>
+
+
+    <main class="admin-container">
+
+
+        <!-- HEADER -->
+
+        <div class="admin-header">
+
+            <div>
+
+                <p style="color:#C7A15A">
+
+                    GULZAR NIGHTS
+
+                </p>
+
+                <h1>
+
+                    Registration Dashboard
+
+                </h1>
+
+            </div>
+
+
+            <button id="logoutButton">
+
+                LOGOUT
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- STATISTICS -->
+
+        <section class="stats">
+
+            <div class="stat-box">
+
+                <p>
+
+                    TOTAL REGISTRATIONS
+
+                </p>
+
+                <h2 id="totalRegistrations">
+
+                    0
+
+                </h2>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- SEARCH -->
+
+        <div class="toolbar">
+
+            <input
+
+                type="text"
+
+                id="searchInput"
+
+                placeholder="Search name, email or number">
+
+
+            <a
+
+                href="/api/admin/export"
+
+                class="export-button">
+
+                EXPORT CSV
+
+            </a>
+
+        </div>
+
+
+
+        <!-- TABLE -->
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Name</th>
+
+                        <th>Email</th>
+
+                        <th>Mobile</th>
+
+                        <th>DOB</th>
+
+                        <th>Registered</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody
+                    id="registrationTable">
+
+                </tbody>
+
+
+            </table>
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- DETAILS MODAL -->
+
+    <div
+        id="detailsModal"
+        class="modal">
+
+
+        <div class="modal-content">
+
+
+            <span
+                id="closeModal"
+                class="modal-close">
+
+                ×
+
+            </span>
+
+
+            <h2>
+
+                Registration Details
+
+            </h2>
+
+
+            <div
+                id="detailsContent">
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>
