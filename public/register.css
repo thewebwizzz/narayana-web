@@ -1,0 +1,630 @@
+/* =================================
+   RESET
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =================================
+   BODY
+================================= */
+
+body {
+
+    min-height: 100vh;
+
+    background: #180505;
+
+    color: #E9DDC6;
+
+    font-family: "Montserrat", sans-serif;
+
+}
+
+
+/* =================================
+   BACKGROUND
+================================= */
+
+.page-background {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(25, 5, 5, 0.88),
+            rgba(10, 0, 0, 0.94)
+        ),
+        url("images/hallway.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    z-index: -1;
+
+}
+
+
+/* =================================
+   MAIN CONTAINER
+================================= */
+
+.registration-container {
+
+    width: 100%;
+
+    max-width: 850px;
+
+    margin: auto;
+
+    padding: 60px 25px;
+
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.registration-header {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+
+}
+
+
+.small-title {
+
+    color: #C7A15A;
+
+    font-size: 12px;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.registration-header h1 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 55px;
+
+    font-weight: 600;
+
+}
+
+
+.ticket-price {
+
+    margin-top: 15px;
+
+    color: #C7A15A;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =================================
+   FORM SECTION
+================================= */
+
+.form-section {
+
+    background:
+        rgba(40, 7, 7, 0.78);
+
+    border:
+        1px solid
+        rgba(199, 161, 90, 0.35);
+
+    backdrop-filter:
+        blur(12px);
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.form-section h2 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 30px;
+
+    margin-bottom: 25px;
+
+    color: #C7A15A;
+
+}
+
+
+.section-note {
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    opacity: 0.8;
+
+    margin-bottom: 15px;
+
+}
+
+
+.event-counter {
+
+    color: #C7A15A;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =================================
+   LABELS
+================================= */
+
+label {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-bottom: 20px;
+
+    font-size: 13px;
+
+}
+
+
+/* =================================
+   INPUTS
+================================= */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border:
+        1px solid
+        rgba(199, 161, 90, 0.45);
+
+    background:
+        rgba(0, 0, 0, 0.25);
+
+    color: #E9DDC6;
+
+    outline: none;
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+}
+
+
+input:focus {
+
+    border-color:
+        #C7A15A;
+
+}
+
+
+/* =================================
+   REPRESENTATIVE TITLE
+================================= */
+
+.representative-title {
+
+    color: #C7A15A;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    margin-top: 30px;
+
+    margin-bottom: 20px;
+
+    padding-bottom: 10px;
+
+    border-bottom:
+        1px solid
+        rgba(199, 161, 90, 0.25);
+
+}
+
+
+/* =================================
+   EVENT LIST
+================================= */
+
+.event-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+
+/* =================================
+   EVENT CARD
+================================= */
+
+.event-card {
+
+    border:
+        1px solid
+        rgba(199, 161, 90, 0.28);
+
+    background:
+        rgba(0, 0, 0, 0.18);
+
+    padding: 18px;
+
+    transition:
+        0.25s ease;
+
+}
+
+
+.event-card:hover {
+
+    border-color:
+        rgba(199, 161, 90, 0.55);
+
+}
+
+
+/* =================================
+   EVENT CHECKBOX
+================================= */
+
+.event-checkbox {
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 0;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    color: #E9DDC6;
+
+}
+
+
+.event-checkbox input {
+
+    width: 18px;
+
+    height: 18px;
+
+    min-width: 18px;
+
+    accent-color: #C7A15A;
+
+}
+
+
+/* =================================
+   EVENT FIELDS
+================================= */
+
+.event-fields {
+
+    display: none;
+
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top:
+        1px solid
+        rgba(199, 161, 90, 0.2);
+
+}
+
+
+.event-fields.active {
+
+    display: block;
+
+}
+
+
+/* =================================
+   PARTICIPANT LIMIT
+================================= */
+
+.participant-limit {
+
+    display: inline-block;
+
+    color: #C7A15A;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    margin-top: -3px;
+
+    letter-spacing: 0.3px;
+
+}
+
+
+/* =================================
+   PARTICIPANT COUNT
+================================= */
+
+.participant-count {
+
+    max-width: 180px;
+
+}
+
+
+/* =================================
+   PARTICIPANT ROW
+================================= */
+
+.participant-row {
+
+    margin-top: 20px;
+
+    padding: 20px;
+
+    border:
+        1px solid
+        rgba(199, 161, 90, 0.2);
+
+    background:
+        rgba(0, 0, 0, 0.18);
+
+}
+
+
+/* =================================
+   PARTICIPANT TITLE
+================================= */
+
+.participant-title {
+
+    color: #C7A15A;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* =================================
+   CHECKBOX
+================================= */
+
+.checkbox-label {
+
+    flex-direction: row;
+
+    align-items: flex-start;
+
+    line-height: 1.7;
+
+}
+
+
+.checkbox-label input {
+
+    margin-top: 5px;
+
+    min-width: 18px;
+
+    min-height: 18px;
+
+    accent-color: #C7A15A;
+
+}
+
+
+.checkbox-label a {
+
+    color: #C7A15A;
+
+}
+
+
+/* =================================
+   SUBMIT BUTTON
+================================= */
+
+.submit-button {
+
+    width: 100%;
+
+    padding: 18px;
+
+    background: #6E1919;
+
+    color: #E9DDC6;
+
+    border:
+        1px solid
+        #C7A15A;
+
+    cursor: pointer;
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    letter-spacing: 2px;
+
+    transition: 0.3s;
+
+}
+
+
+.submit-button:hover {
+
+    background: #C7A15A;
+
+    color: #1A0505;
+
+}
+
+
+.submit-button:disabled {
+
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+}
+
+
+/* =================================
+   MESSAGE
+================================= */
+
+.form-message {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =================================
+   BACK BUTTON
+================================= */
+
+.back-button {
+
+    display: block;
+
+    text-align: center;
+
+    margin-top: 35px;
+
+    color: #C7A15A;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.back-button:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+
+    .registration-container {
+
+        padding: 40px 15px;
+
+    }
+
+
+    .registration-header h1 {
+
+        font-size: 42px;
+
+    }
+
+
+    .form-section {
+
+        padding: 22px;
+
+    }
+
+
+    .participant-row {
+
+        padding: 15px;
+
+    }
+
+
+    .participant-title {
+
+        font-size: 20px;
+
+    }
+
+
+    .participant-count {
+
+        max-width: 100%;
+
+    }
+
+}

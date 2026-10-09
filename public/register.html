@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | HULLOR </title>
+
+    <link rel="stylesheet" href="register.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="page-background"></div>
+
+<main class="registration-container">
+
+    <div class="registration-header">
+        <p class="small-title"></p>
+
+        <h1>Register Now</h1>
+
+        <p class="ticket-price">SCHOOL REGISTRATION</p>
+    </div>
+
+
+    <form id="registrationForm">
+
+        <!-- SCHOOL DETAILS -->
+
+        <section class="form-section">
+
+            <h2>School Details</h2>
+
+            <label>
+                School Name *
+
+                <input
+                    type="text"
+                    id="schoolName"
+                    maxlength="150"
+                    required>
+            </label>
+
+
+            <label>
+                School Email ID *
+
+                <input
+                    type="email"
+                    id="schoolEmail"
+                    required>
+            </label>
+
+
+            <div class="representative-title">
+                School Representative 1
+            </div>
+
+            <label>
+                Name *
+
+                <input
+                    type="text"
+                    id="representative1Name"
+                    maxlength="100"
+                    required>
+            </label>
+
+            <label>
+                Phone Number *
+
+                <input
+                    type="tel"
+                    id="representative1Phone"
+                    inputmode="numeric"
+                    maxlength="15"
+                    required>
+            </label>
+
+            <label>
+                Email ID *
+
+                <input
+                    type="email"
+                    id="representative1Email"
+                    required>
+            </label>
+
+
+            <div class="representative-title">
+                School Representative 2
+            </div>
+
+            <label>
+                Name *
+
+                <input
+                    type="text"
+                    id="representative2Name"
+                    maxlength="100"
+                    required>
+            </label>
+
+            <label>
+                Phone Number *
+
+                <input
+                    type="tel"
+                    id="representative2Phone"
+                    inputmode="numeric"
+                    maxlength="15"
+                    required>
+            </label>
+
+            <label>
+                Email ID *
+
+                <input
+                    type="email"
+                    id="representative2Email"
+                    required>
+            </label>
+
+        </section>
+
+
+        <!-- EVENTS -->
+
+        <section class="form-section">
+
+            <h2>Select Events</h2>
+
+            <p class="section-note">
+                Select the events your school will participate in.
+                The participant details will appear automatically.
+            </p>
+
+            <p id="eventCounter" class="event-counter">
+                Events selected: 0
+            </p>
+
+
+            <div class="event-list">
+
+
+                <!-- SOLO VOCALS -->
+
+                <div class="event-card">
+
+                    <label class="event-checkbox">
+                        <input
+                            type="checkbox"
+                            class="event-select"
+                            value="Solo Vocals"
+                            data-event="soloVocals">
+
+                        <span>Solo Vocals</span>
+                    </label>
+
+                    <div class="event-fields" id="soloVocals">
+
+                        <label>
+                            How many participants?
+
+                            <input
+                                type="number"
+                                class="participant-count"
+                                min="1"
+                                max="1"
+                                value="1">
+                        </label>
+
+                        <div class="participants"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- WESTERN BAND -->
+
+                <div class="event-card">
+
+                    <label class="event-checkbox">
+                        <input
+                            type="checkbox"
+                            class="event-select"
+                            value="Western Band"
+                            data-event="westernBand">
+
+                        <span>Western Band</span>
+                    </label>
+
+                    <div class="event-fields" id="westernBand">
+
+                        <label>
+                            How many participants?
+
+                            <input
+                                type="number"
+                                class="participant-count"
+                                min="1"
+                                max="8"
+                                value="1">
+                        </label>
+
+                        <div class="participants"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SLAM POETRY -->
+
+                <div class="event-card">
+
+                    <label class="event-checkbox">
+                        <input
+                            type="checkbox"
+                            class="event-select"
+                            value="Slam Poetry"
+                            data-event="slamPoetry">
+
+                        <span>Slam Poetry</span>
+                    </label>
+
+                    <div class="event-fields" id="slamPoetry">
+
+                        <label>
+                            How many participants?
+
+                            <input
+                                type="number"
+                                class="participant-count"
+                                min="1"
+                                max="1"
+                                value="1">
+                        </label>
+
+                        <div class="participants"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SHORT FILM -->
+
+                <div class="event-card">
+
+                    <label class="event-checkbox">
+                        <input
+                            type="checkbox"
+                            class="event-select"
+                            value="Short Film"
+                            data-event="shortFilm">
+
+                        <span>Short Film</span>
+                    </label>
+
+                    <div class="event-fields" id="shortFilm">
+
+                        <label>
+                            How many participants?
+
+                            <input
+                                type="number"
+                                class="participant-count"
+                                min="1"
+                                max="8"
+                                value="1">
+                        </label>
+
+                        <div class="participants"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SOLO DANCE -->
+
+                <div class="event-card">
+
+                    <label class="event-checkbox">
+                        <input
+                            type="checkbox"
+                            class="event-select"
+                            value="Solo Dance"
+                            data-event="soloDance">
+
+                        <span>Solo Dance</span>
+                    </label>
+
+                    <div class="event-fields" id="soloDance">
+
+                        <label>
+                            How many participants?
+
+                            <input
+                                type="number"
+                                class="participant-count"
+                                min="1"
+                                max="1"
+                                value="1">
+                        </label>
+
+                        <div class="participants"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- GROUP DANCE -->
+
+                <div class="event-card">
+
+                    <label class="event-checkbox">
+                        <input
+                            type="checkbox"
+                            class="event-select"
+                            value="Group Dance"
+                            data-event="groupDance">
+
+                        <span>Group Dance</span>
+                    </label>
+
+                    <div class="event-fields" id="groupDance">
+
+                        <label>
+                            How many participants?
+
+                            <input
+                                type="number"
+                                class="participant-count"
+                                min="1"
+                                max="8"
+                                value="1">
+                        </label>
+
+                        <div class="participants"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SHARK TANK -->
+
+                <div class="event-card">
+
+                    <label class="event-checkbox">
+                        <input
+                            type="checkbox"
+                            class="event-select"
+                            value="Shark Tank"
+                            data-event="sharkTank">
+
+                        <span>Shark Tank</span>
+                    </label>
+
+                    <div class="event-fields" id="sharkTank">
+
+                        <label>
+                            How many participants?
+
+                            <input
+                                type="number"
+                                class="participant-count"
+                                min="1"
+                                max="2"
+                                value="1">
+                        </label>
+
+                        <div class="participants"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FASHION SHOW -->
+
+                <div class="event-card">
+
+                    <label class="event-checkbox">
+                        <input
+                            type="checkbox"
+                            class="event-select"
+                            value="Fashion Show"
+                            data-event="fashionShow">
+
+                        <span>Fashion Show</span>
+                    </label>
+
+                    <div class="event-fields" id="fashionShow">
+
+                        <label>
+                            How many participants?
+
+                            <input
+                                type="number"
+                                class="participant-count"
+                                min="1"
+                                max="8"
+                                value="1">
+                        </label>
+
+                        <div class="participants"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- NON FIRE COOKING -->
+
+                <div class="event-card">
+
+                    <label class="event-checkbox">
+                        <input
+                            type="checkbox"
+                            class="event-select"
+                            value="Non-Fire Cooking"
+                            data-event="nonFireCooking">
+
+                        <span>Non-Fire Cooking</span>
+                    </label>
+
+                    <div class="event-fields" id="nonFireCooking">
+
+                        <label>
+                            How many participants?
+
+                            <input
+                                type="number"
+                                class="participant-count"
+                                min="1"
+                                max="2"
+                                value="1">
+                        </label>
+
+                        <div class="participants"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- QUIZ -->
+
+                <div class="event-card">
+
+                    <label class="event-checkbox">
+                        <input
+                            type="checkbox"
+                            class="event-select"
+                            value="Quiz"
+                            data-event="quiz">
+
+                        <span>Quiz</span>
+                    </label>
+
+                    <div class="event-fields" id="quiz">
+
+                        <label>
+                            How many participants?
+
+                            <input
+                                type="number"
+                                class="participant-count"
+                                min="1"
+                                max="2"
+                                value="1">
+                        </label>
+
+                        <div class="participants"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- JUST A MIN JAM -->
+
+                <div class="event-card">
+
+                    <label class="event-checkbox">
+                        <input
+                            type="checkbox"
+                            class="event-select"
+                            value="Just a Min Jam"
+                            data-event="justAMinJam">
+
+                        <span>Just a Min Jam</span>
+                    </label>
+
+                    <div class="event-fields" id="justAMinJam">
+
+                        <label>
+                            How many participants?
+
+                            <input
+                                type="number"
+                                class="participant-count"
+                                min="1"
+                                max="1"
+                                value="1">
+                        </label>
+
+                        <div class="participants"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DEBATE -->
+
+                <div class="event-card">
+
+                    <label class="event-checkbox">
+                        <input
+                            type="checkbox"
+                            class="event-select"
+                            value="Debate"
+                            data-event="debate">
+
+                        <span>Debate</span>
+                    </label>
+
+                    <div class="event-fields" id="debate">
+
+                        <label>
+                            How many participants?
+
+                            <input
+                                type="number"
+                                class="participant-count"
+                                min="1"
+                                max="1"
+                                value="1">
+                        </label>
+
+                        <div class="participants"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PAINTING -->
+
+                <div class="event-card">
+
+                    <label class="event-checkbox">
+                        <input
+                            type="checkbox"
+                            class="event-select"
+                            value="Painting"
+                            data-event="painting">
+
+                        <span>Painting</span>
+                    </label>
+
+                    <div class="event-fields" id="painting">
+
+                        <label>
+                            How many participants?
+
+                            <input
+                                type="number"
+                                class="participant-count"
+                                min="1"
+                                max="2"
+                                value="1">
+                        </label>
+
+                        <div class="participants"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARICATURE -->
+
+                <div class="event-card">
+
+                    <label class="event-checkbox">
+                        <input
+                            type="checkbox"
+                            class="event-select"
+                            value="Caricature"
+                            data-event="caricature">
+
+                        <span>Caricature</span>
+                    </label>
+
+                    <div class="event-fields" id="caricature">
+
+                        <label>
+                            How many participants?
+
+                            <input
+                                type="number"
+                                class="participant-count"
+                                min="1"
+                                max="2"
+                                value="1">
+                        </label>
+
+                        <div class="participants"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RULES -->
+
+        <section class="form-section">
+
+            <h2>Rules & Policies</h2>
+
+            <label class="checkbox-label">
+
+                <input
+                    type="checkbox"
+                    id="rulesAgreement"
+                    required>
+
+                <span>
+
+                    I have read and agree to the
+                    <a href="rules.html" target="_blank">
+                        Rules & Policies
+                    </a>
+                    and understand the
+                    <a href="privacy.html" target="_blank">
+                        Privacy Information.
+                    </a>
+
+                </span>
+
+            </label>
+
+        </section>
+
+
+        <button
+            type="submit"
+            class="submit-button">
+
+            SUBMIT REGISTRATION
+
+        </button>
+
+
+        <p id="formMessage" class="form-message"></p>
+
+    </form>
+
+
+    <a href="index.html" class="back-button">
+        ← BACK TO HOMEPAGE
+    </a>
+
+</main>
+
+
+<script src="register.js"></script>
+
+</body>
+</html>

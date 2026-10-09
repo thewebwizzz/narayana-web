@@ -1,0 +1,203 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | Gulzar Nights</title>
+
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         ADMIN DASHBOARD
+    ========================================== -->
+
+    <main
+        id="adminDashboard"
+        class="admin-container"
+    >
+
+
+        <header class="admin-header">
+
+            <div>
+
+                <p class="admin-small-title">
+                    GULZAR NIGHTS
+                </p>
+
+                <h1>
+                    Admin Dashboard
+                </h1>
+
+            </div>
+
+
+            <button
+                id="logoutButton"
+                type="button"
+            >
+                LOGOUT
+            </button>
+
+        </header>
+
+
+        <!-- =====================================
+             SUMMARY
+        ====================================== -->
+
+        <section class="admin-summary">
+
+            <div class="summary-card">
+
+                <p>
+                    TOTAL REGISTRATIONS
+                </p>
+
+                <h2 id="totalRegistrations">
+                    0
+                </h2>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             SEARCH
+        ====================================== -->
+
+        <section class="admin-controls">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search school, email, representative or event..."
+                autocomplete="off"
+            >
+
+
+            <a
+                href="/api/admin/export"
+                class="export-button"
+            >
+                EXPORT CSV
+            </a>
+
+        </section>
+
+
+        <!-- =====================================
+             REGISTRATION TABLE
+        ====================================== -->
+
+        <section class="registration-section">
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                ID
+                            </th>
+
+                            <th>
+                                SCHOOL
+                            </th>
+
+                            <th>
+                                EMAIL
+                            </th>
+
+                            <th>
+                                REPRESENTATIVE
+                            </th>
+
+                            <th>
+                                EVENTS
+                            </th>
+
+                            <th>
+                                REGISTERED
+                            </th>
+
+                            <th>
+                                ACTIONS
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody
+                        id="registrationTable"
+                    >
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================================
+         DETAILS MODAL
+    ========================================== -->
+
+    <div
+        id="detailsModal"
+        class="modal"
+    >
+
+        <div class="modal-content">
+
+
+            <button
+                id="closeModal"
+                class="modal-close"
+                type="button"
+            >
+                &times;
+            </button>
+
+
+            <div
+                id="detailsContent"
+            >
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>
+```

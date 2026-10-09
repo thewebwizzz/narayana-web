@@ -1,0 +1,1062 @@
+```css
+/* ===================================
+   HULLOR 2K26
+   ADMIN LOGIN + DASHBOARD
+=================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: #180505;
+
+    color: #E9DDC6;
+
+    font-family:
+        Arial,
+        sans-serif;
+}
+
+
+/* ===================================
+   ADMIN LOGIN PAGE
+=================================== */
+
+.admin-login-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+.login-box {
+
+    width: 100%;
+
+    max-width: 400px;
+
+    padding: 40px;
+
+    background: #2b0808;
+
+    border: 1px solid #C7A15A;
+
+    box-shadow:
+        0 20px 60px
+        rgba(0, 0, 0, 0.35);
+}
+
+
+.admin-small-title {
+
+    margin-bottom: 8px;
+
+    color: #C7A15A;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+
+.login-box h1 {
+
+    margin:
+        0 0 30px;
+
+    color: #E9DDC6;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 30px;
+
+    letter-spacing: 1px;
+}
+
+
+.login-box input {
+
+    width: 100%;
+
+    padding: 15px;
+
+    margin-bottom: 15px;
+
+    background: #170303;
+
+    border: 1px solid #6E1919;
+
+    outline: none;
+
+    color: #E9DDC6;
+
+    font-size: 14px;
+}
+
+
+.login-box input::placeholder {
+
+    color:
+        rgba(
+            233,
+            221,
+            198,
+            0.45
+        );
+}
+
+
+.login-box input:focus {
+
+    border-color: #C7A15A;
+}
+
+
+.login-box button {
+
+    width: 100%;
+
+    padding: 15px;
+
+    background: #6E1919;
+
+    color: #E9DDC6;
+
+    border: 1px solid #C7A15A;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+
+    transition:
+        0.2s ease;
+}
+
+
+.login-box button:hover {
+
+    background: #8a2020;
+
+    color: #ffffff;
+}
+
+
+.login-message {
+
+    min-height: 20px;
+
+    margin:
+        15px 0 0;
+
+    color: #C7A15A;
+
+    font-size: 13px;
+
+    text-align: center;
+}
+
+
+/* ===================================
+   ADMIN DASHBOARD
+=================================== */
+
+.admin-dashboard {
+
+    min-height: 100vh;
+}
+
+
+.admin-container {
+
+    width: 100%;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 30px;
+}
+
+
+/* ===================================
+   HEADER
+=================================== */
+
+.admin-header {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    gap: 25px;
+
+    margin-bottom: 35px;
+
+    padding-bottom: 25px;
+
+    border-bottom:
+        1px solid
+        rgba(
+            199,
+            161,
+            90,
+            0.35
+        );
+}
+
+
+.admin-header h1 {
+
+    margin: 0;
+
+    color: #E9DDC6;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 36px;
+
+    letter-spacing: 2px;
+}
+
+
+.admin-header p {
+
+    margin:
+        8px 0 0;
+
+    color:
+        rgba(
+            233,
+            221,
+            198,
+            0.65
+        );
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+}
+
+
+.admin-header button {
+
+    padding:
+        12px 22px;
+
+    background: transparent;
+
+    color: #E9DDC6;
+
+    border:
+        1px solid
+        #C7A15A;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition:
+        0.2s ease;
+}
+
+
+.admin-header button:hover {
+
+    background: #6E1919;
+
+    color: #ffffff;
+}
+
+
+/* ===================================
+   STATISTICS
+=================================== */
+
+.stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(220px, 1fr)
+        );
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+
+.stat-box {
+
+    padding: 25px;
+
+    background: #2b0808;
+
+    border:
+        1px solid
+        rgba(
+            199,
+            161,
+            90,
+            0.4
+        );
+
+    box-shadow:
+        0 10px 30px
+        rgba(
+            0,
+            0,
+            0,
+            0.15
+        );
+}
+
+
+.stat-label {
+
+    margin-bottom: 10px;
+
+    color:
+        rgba(
+            233,
+            221,
+            198,
+            0.65
+        );
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+
+.stat-box h2 {
+
+    margin: 0;
+
+    color: #C7A15A;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 38px;
+}
+
+
+/* ===================================
+   TOOLBAR
+=================================== */
+
+.toolbar {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.toolbar input {
+
+    flex: 1;
+
+    min-width: 0;
+
+    padding:
+        14px 16px;
+
+    background: #170303;
+
+    color: #E9DDC6;
+
+    border:
+        1px solid
+        #6E1919;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+
+.toolbar input::placeholder {
+
+    color:
+        rgba(
+            233,
+            221,
+            198,
+            0.45
+        );
+}
+
+
+.toolbar input:focus {
+
+    border-color:
+        #C7A15A;
+}
+
+
+.export-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding:
+        14px 22px;
+
+    background: #6E1919;
+
+    color: #E9DDC6;
+
+    border:
+        1px solid
+        #C7A15A;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+
+    transition:
+        0.2s ease;
+}
+
+
+.export-button:hover {
+
+    background: #8a2020;
+
+    color: #ffffff;
+}
+
+
+/* ===================================
+   TABLE
+=================================== */
+
+.table-container {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+    border:
+        1px solid
+        rgba(
+            199,
+            161,
+            90,
+            0.25
+        );
+}
+
+
+table {
+
+    width: 100%;
+
+    min-width: 850px;
+
+    border-collapse:
+        collapse;
+
+    background: #240606;
+}
+
+
+thead {
+
+    background: #2b0808;
+}
+
+
+th,
+td {
+
+    padding: 16px;
+
+    text-align: left;
+
+    border-bottom:
+        1px solid
+        rgba(
+            199,
+            161,
+            90,
+            0.15
+        );
+
+    vertical-align: middle;
+}
+
+
+th {
+
+    color: #C7A15A;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    white-space: nowrap;
+}
+
+
+td {
+
+    color: #E9DDC6;
+
+    font-size: 13px;
+}
+
+
+tbody tr {
+
+    transition:
+        background 0.2s ease;
+}
+
+
+tbody tr:hover {
+
+    background: #2b0808;
+}
+
+
+/* ===================================
+   ACTION BUTTONS
+=================================== */
+
+.action-button {
+
+    padding:
+        8px 12px;
+
+    margin-right: 5px;
+
+    background: transparent;
+
+    color: #E9DDC6;
+
+    border:
+        1px solid
+        #6E1919;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition:
+        0.2s ease;
+}
+
+
+.action-button:hover {
+
+    background: #6E1919;
+
+    border-color:
+        #C7A15A;
+}
+
+
+.delete-button {
+
+    border-color:
+        #8b2525;
+}
+
+
+.delete-button:hover {
+
+    background: #8b2525;
+
+    border-color:
+        #C7A15A;
+}
+
+
+/* ===================================
+   EMPTY TABLE
+=================================== */
+
+.empty-row {
+
+    padding: 40px !important;
+
+    text-align: center;
+
+    color:
+        rgba(
+            233,
+            221,
+            198,
+            0.5
+        );
+}
+
+
+/* ===================================
+   MODAL
+=================================== */
+
+.modal {
+
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    background:
+        rgba(
+            0,
+            0,
+            0,
+            0.82
+        );
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+.modal.active {
+
+    display: flex;
+}
+
+
+.modal-content {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 750px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    padding: 30px;
+
+    background: #240606;
+
+    border:
+        1px solid
+        #C7A15A;
+
+    box-shadow:
+        0 20px 60px
+        rgba(
+            0,
+            0,
+            0,
+            0.5
+        );
+}
+
+
+/* ===================================
+   MODAL CLOSE
+=================================== */
+
+.modal-close {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 20px;
+
+    color: #E9DDC6;
+
+    font-size: 28px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease;
+}
+
+
+.modal-close:hover {
+
+    color: #C7A15A;
+}
+
+
+/* ===================================
+   MODAL TITLE
+=================================== */
+
+.modal-content h2 {
+
+    margin:
+        0 35px 25px 0;
+
+    color: #E9DDC6;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 25px;
+}
+
+
+/* ===================================
+   DETAIL SECTIONS
+=================================== */
+
+.detail-section-title {
+
+    margin:
+        25px 0 10px;
+
+    padding-bottom: 8px;
+
+    color: #C7A15A;
+
+    border-bottom:
+        1px solid
+        rgba(
+            199,
+            161,
+            90,
+            0.3
+        );
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 20px;
+}
+
+
+.detail-row {
+
+    display: flex;
+
+    gap: 15px;
+
+    padding:
+        12px 0;
+
+    border-bottom:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.08
+        );
+}
+
+
+.detail-label {
+
+    min-width: 180px;
+
+    color: #C7A15A;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+}
+
+
+.detail-value {
+
+    flex: 1;
+
+    color: #E9DDC6;
+
+    font-size: 14px;
+
+    word-break: break-word;
+}
+
+
+/* ===================================
+   EVENTS
+=================================== */
+
+.admin-event {
+
+    margin-top: 15px;
+
+    padding: 15px;
+
+    background: #2b0808;
+
+    border:
+        1px solid
+        rgba(
+            199,
+            161,
+            90,
+            0.2
+        );
+}
+
+
+.admin-event-title {
+
+    margin-bottom: 10px;
+
+    color: #C7A15A;
+
+    font-weight: bold;
+
+    font-size: 15px;
+}
+
+
+.admin-event-title span {
+
+    color:
+        rgba(
+            233,
+            221,
+            198,
+            0.65
+        );
+
+    font-size: 12px;
+
+    font-weight: normal;
+}
+
+
+.admin-participant {
+
+    padding:
+        9px 0;
+
+    border-top:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.06
+        );
+
+    color: #E9DDC6;
+
+    font-size: 13px;
+}
+
+
+.admin-participant span {
+
+    color:
+        rgba(
+            233,
+            221,
+            198,
+            0.65
+        );
+}
+
+
+/* ===================================
+   MODAL SCROLLBAR
+=================================== */
+
+.modal-content::-webkit-scrollbar {
+
+    width: 7px;
+}
+
+
+.modal-content::-webkit-scrollbar-track {
+
+    background: #170303;
+}
+
+
+.modal-content::-webkit-scrollbar-thumb {
+
+    background: #6E1919;
+
+    border-radius: 10px;
+}
+
+
+/* ===================================
+   MOBILE
+=================================== */
+
+@media (max-width: 700px) {
+
+    .admin-container {
+
+        padding: 18px;
+    }
+
+
+    .admin-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        margin-bottom: 25px;
+    }
+
+
+    .admin-header h1 {
+
+        font-size: 28px;
+    }
+
+
+    .admin-header button {
+
+        width: 100%;
+    }
+
+
+    .toolbar {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .toolbar input {
+
+        width: 100%;
+    }
+
+
+    .export-button {
+
+        width: 100%;
+    }
+
+
+    .modal {
+
+        padding: 10px;
+    }
+
+
+    .modal-content {
+
+        padding:
+            22px 18px;
+    }
+
+
+    .detail-row {
+
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+
+    .detail-label {
+
+        min-width: 0;
+    }
+
+}
+
+
+/* ===================================
+   SMALL SCREENS
+=================================== */
+
+@media (max-width: 400px) {
+
+    .login-box {
+
+        padding: 28px 22px;
+    }
+
+
+    .admin-container {
+
+        padding: 12px;
+    }
+
+
+    .admin-header h1 {
+
+        font-size: 24px;
+    }
+
+
+    .stat-box {
+
+        padding: 20px;
+    }
+
+
+    .stat-box h2 {
+
+        font-size: 32px;
+    }
+
+}
+```

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Our Team | Narayana Newtown</title>
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            min-height: 100vh;
+
+            background: #140303;
+
+            color: #E9DDC6;
+
+            font-family: "Montserrat", sans-serif;
+
+            padding: 50px 20px;
+
+        }
+
+
+        .team-container {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+        }
+
+
+        /* HEADER */
+
+        .team-header {
+
+            text-align: center;
+
+            margin-bottom: 55px;
+
+        }
+
+
+        .team-small-title {
+
+            color: #C7A15A;
+
+            font-size: 12px;
+
+            letter-spacing: 5px;
+
+            margin-bottom: 12px;
+
+        }
+
+
+        .team-header h1 {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size: 60px;
+
+            font-weight: 600;
+
+        }
+
+
+        .team-header p {
+
+            max-width: 650px;
+
+            margin: 15px auto 0;
+
+            line-height: 1.7;
+
+            font-size: 14px;
+
+            color:
+                rgba(233, 221, 198, 0.8);
+
+        }
+
+
+        /* TEAM GRID */
+
+        .team-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+
+        }
+
+
+        /* TEAM CARD */
+
+        .team-card {
+
+            background:
+                rgba(40, 7, 7, 0.85);
+
+            border:
+                1px solid
+                rgba(199, 161, 90, 0.35);
+
+            padding: 30px;
+
+            text-align: center;
+
+            transition:
+                0.4s ease;
+
+        }
+
+
+        .team-card:hover {
+
+            transform:
+                translateY(-7px);
+
+            border-color:
+                #C7A15A;
+
+            background:
+                rgba(65, 10, 10, 0.9);
+
+        }
+
+
+        /* PHOTO */
+
+        .team-photo {
+
+            width: 150px;
+
+            height: 150px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            border:
+                2px solid
+                rgba(199, 161, 90, 0.8);
+
+            margin-bottom: 20px;
+
+        }
+
+
+        /* ROLE */
+
+        .team-role {
+
+            color: #C7A15A;
+
+            font-size: 11px;
+
+            letter-spacing: 3px;
+
+            margin-bottom: 8px;
+
+        }
+
+
+        /* NAME */
+
+        .team-name {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size: 30px;
+
+            margin-bottom: 12px;
+
+        }
+
+
+        /* DESCRIPTION */
+
+        .team-description {
+
+            font-size: 13px;
+
+            line-height: 1.7;
+
+            color:
+                rgba(233, 221, 198, 0.75);
+
+        }
+
+
+        /* BACK BUTTON */
+
+        .back-button {
+
+            display: block;
+
+            width: fit-content;
+
+            margin: 50px auto 0;
+
+            padding: 13px 28px;
+
+            color: #E9DDC6;
+
+            border:
+                1px solid
+                #C7A15A;
+
+            text-decoration: none;
+
+            font-size: 12px;
+
+            letter-spacing: 2px;
+
+            transition:
+                0.3s ease;
+
+        }
+
+
+        .back-button:hover {
+
+            background: #C7A15A;
+
+            color: #1A0505;
+
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 800px) {
+
+            .team-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+            }
+
+        }
+
+
+        @media (max-width: 550px) {
+
+            body {
+
+                padding:
+                    35px 15px;
+
+            }
+
+
+            .team-header h1 {
+
+                font-size: 45px;
+
+            }
+
+
+            .team-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .team-card {
+
+                padding: 25px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <main class="team-container">
+
+
+        <!-- HEADER -->
+
+        <header class="team-header">
+
+            <p class="team-small-title">
+                NARAYANA NEWTOWN
+            </p>
+
+            <h1>
+                Our Team
+            </h1>
+
+            <p>
+
+                Meet the people who help make
+                our school and its events possible.
+
+            </p>
+
+        </header>
+
+
+
+        <!-- TEAM MEMBERS -->
+
+        <section class="team-grid">
+
+
+            <!-- TEAM MEMBER 1 -->
+
+            <div class="team-card">
+
+                <img
+                    src="images/team1.jpg"
+                    alt="Team Member"
+                    class="team-photo">
+
+                <p class="team-role">
+                    Event Incharge
+                </p>
+
+                <h2 class="team-name">
+                   Abdul Rahaman
+                </h2>
+
+                <p class="team-description">
+                       Managing all logistics, planning and execution
+                               to deliver flawless a event
+
+                </p>
+
+            </div>
+
+
+
+            <!-- TEAM MEMBER 2 -->
+
+            <div class="team-card">
+
+                <img
+                    src="images/team2.jpg"
+                    alt="Team Member"
+                    class="team-photo">
+
+                <p class="team-role">
+                    The Board
+                </p>
+
+                <h2 class="team-name">
+                    Samridho Banerjee
+                </h2>
+
+                <p class="team-description">
+
+                    Drives strategic decisions and high 
+                      level oversight for the event
+
+                </p>
+
+            </div>
+
+
+
+            <!-- TEAM MEMBER 3 -->
+
+            <div class="team-card">
+
+                <img
+                    src="images/team3.jpg"
+                    alt="Team Member"
+                    class="team-photo">
+
+                <p class="team-role">
+                    The Board
+                </p>
+
+                <h2 class="team-name">
+                    Chaahat Singh
+                </h2>
+
+                <p class="team-description">
+
+                   Drives strategic decisions and high 
+                      level oversight for the event
+
+                </p>
+
+            </div>
+
+
+
+            <!-- TEAM MEMBER 4 -->
+
+            <div class="team-card">
+
+                <img
+                    src="images/team4.jpg"
+                    alt="Team Member"
+                    class="team-photo">
+
+                <p class="team-role">
+                    The Board
+                </p>
+
+                <h2 class="team-name">
+                    Hareram Kumar Shah
+                </h2>
+
+                <p class="team-description">
+
+                    Drives strategic decisions and high 
+                      level oversight for the event
+
+
+                </p>
+
+            </div>
+
+
+
+            <!-- TEAM MEMBER 5 -->
+
+            <div class="team-card">
+
+                <img
+                    src="images/team5.jpg"
+                    alt="Team Member"
+                    class="team-photo">
+
+                <p class="team-role">
+                    The Board
+                </p>
+
+                <h2 class="team-name">
+                    Yatish Guttikonda
+                </h2>
+
+                <p class="team-description">
+
+                    Drives strategic decisions and high 
+                      level oversight for the event
+
+
+                </p>
+
+            </div>
+
+
+
+            <!-- TEAM MEMBER 6 -->
+
+            <div class="team-card">
+
+                <img
+                    src="images/team6.jpg"
+                    alt="Team Member"
+                    class="team-photo">
+
+                <p class="team-role">
+                    Tech Expert
+                </p>
+
+                <h2 class="team-name">
+                    Aniketh Vijay Mishra
+                </h2>
+
+                <p class="team-description">
+
+                    Managing our web design and digital systems 
+                         beautifully and smoothly @anikethvm_
+
+
+                </p>
+
+            </div>
+           
+
+             <!-- TEAM MEMBER 7 -->
+
+            <div class="team-card">
+
+                <img
+                    src="images/team7.jpg"
+                    alt="Team Member"
+                    class="team-photo">
+
+                <p class="team-role">
+                    The Board
+                </p>
+
+                <h2 class="team-name">
+                    Shreyan Ghosh
+                </h2>
+
+                <p class="team-description">
+
+                    Drives strategic decisions and high 
+                      level oversight for the event
+                       
+                    </p>
+
+               </div>
+            
+
+             <!-- TEAM MEMBER 8 -->
+
+            <div class="team-card">
+
+                <img
+                    src="images/team8.jpg"
+                    alt="Team Member"
+                    class="team-photo">
+
+                <p class="team-role">
+                    The Board
+                </p>
+
+                <h2 class="team-name">
+                    Akshada Sharma
+                </h2>
+
+                <p class="team-description">
+
+                    Drives strategic decisions and high 
+                      level oversight for the event
+
+                </p>
+
+            </div>
+
+             <!-- TEAM MEMBER 9 -->
+
+            <div class="team-card">
+
+                <img
+                    src="images/team9.jpg"
+                    alt="Team Member"
+                    class="team-photo">
+
+                <p class="team-role">
+                    The Board
+                </p>
+
+                <h2 class="team-name">
+                    Rajnita Banerjee
+                </h2>
+
+                <p class="team-description">
+
+                    Drives strategic decisions and high 
+                      level oversight for the event
+
+                </p>
+
+            </div>
+
+
+
+        </section>
+
+
+
+        <!-- BACK -->
+
+        <a href="index.html"
+            class="back-button">
+
+            ← BACK TO HOME
+
+        </a>
+
+
+    </main>
+
+
+</body>
+
+</html>
